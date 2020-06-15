@@ -8,7 +8,9 @@ a {
     text-decoration: none;
 }
 
-
+#footerr {
+    font-size: 18px;
+}
 
 .vh20 {
     min-height: 20vh;
