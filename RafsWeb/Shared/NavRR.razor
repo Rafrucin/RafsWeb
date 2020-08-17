@@ -1,36 +1,70 @@
 ﻿@page "/nav"
 
-<section>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col raftitle d-flex pt-5 pl-5">
-                <div><NavLink class="raftitle text-muted btn btn-sm btn-dark ml-1" href="/">Home</NavLink></div>
-                <div>
-                    <NavLink class="raftitle text-muted btn btn-sm btn-dark ml-1" href="About">About</NavLink>
-                </div>                
-                <div>
-                    <NavLink class="raftitle text-muted btn btn-sm btn-dark ml-1" href="skills">Skills</NavLink>
-                </div>        
-                <div>
-                    <NavLink class="raftitle text-muted btn btn-sm btn-dark ml-1" href="dotnet">.Net</NavLink>
-                </div>                
-                <div>
-                    <NavLink class="raftitle text-muted btn btn-sm btn-dark ml-1" href="cs">C#</NavLink>
-                </div>       
-                <div>
-                    <NavLink class="raftitle text-muted btn btn-sm btn-dark ml-1" href="web">WEB</NavLink>
-                </div>               
-                <div>
-                    <NavLink class="raftitle text-muted btn btn-sm btn-dark ml-1" href="cpp">C++</NavLink>
-                </div>            
+    <section>
+        <div class="container-fluid d-none d-sm-block">
+            <div class="row">
+                <div class="col raftitle d-flex pt-5 pl-5">
+                    <div><NavLink class="raftitle text-muted btn btn-sm btn-dark ml-1" href="/">Home</NavLink></div>
+                    <div>
+                        <NavLink class="raftitle text-muted btn btn-sm btn-dark ml-1" href="About">About</NavLink>
+                    </div>
+                    <div>
+                        <NavLink class="raftitle text-muted btn btn-sm btn-dark ml-1" href="skills">Skills</NavLink>
+                    </div>
+                    <div>
+                        <NavLink class="raftitle text-muted btn btn-sm btn-dark ml-1" href="dotnet">.Net</NavLink>
+                    </div>
+                    <div>
+                        <NavLink class="raftitle text-muted btn btn-sm btn-dark ml-1" href="cs">C#</NavLink>
+                    </div>
+                    <div>
+                        <NavLink class="raftitle text-muted btn btn-sm btn-dark ml-1" href="web">WEB</NavLink>
+                    </div>
+                    <div>
+                        <NavLink class="raftitle text-muted btn btn-sm btn-dark ml-1" href="cpp">C++</NavLink>
+                    </div>
+                </div>
             </div>
+
         </div>
 
-    </div>
+        <div class="container-fluid d-sm-none">
+            <div class="row">
+                <div class="col raftitle d-flex pt-3 pl-3">
+                    <div><NavLink class="raftitle text-muted btn btn-sm btn-dark ml-1" href="/">Home</NavLink></div>
+                    <div>
+                        <NavLink class="raftitle text-muted btn btn-sm btn-dark ml-1" href="About">About</NavLink>
+                    </div>
+                    <div>
+                        <NavLink class="raftitle text-muted btn btn-sm btn-dark ml-1" href="skills">Skills</NavLink>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col raftitle d-flex pb-3 pl-3">
+                    <div>
+                        <NavLink class="raftitle text-muted btn btn-sm btn-dark ml-1" href="dotnet">.Net</NavLink>
+                    </div>
+                    <div>
+                        <NavLink class="raftitle text-muted btn btn-sm btn-dark ml-1" href="cs">C#</NavLink>
+                    </div>
+                    <div>
+                        <NavLink class="raftitle text-muted btn btn-sm btn-dark ml-1" href="web">WEB</NavLink>
+                    </div>
+                    <div>
+                        <NavLink class="raftitle text-muted btn btn-sm btn-dark ml-1" href="cpp">C++</NavLink>
+                    </div>
+                </div>
+            </div>
+
+        </div>
 
 
-</section>
+
+
+    </section>
 
 @code {
-    // home about skills .net web c# c++
+
 }

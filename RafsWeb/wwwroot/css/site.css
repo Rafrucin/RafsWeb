@@ -12,6 +12,10 @@ a {
     font-size: 18px;
 }
 
+.vh10 {
+    min-height: 10vh;
+}
+
 .vh20 {
     min-height: 20vh;
 }
@@ -44,6 +48,8 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    height: 100%;
+    overflow: hidden;
 }
 
 .h10 {
