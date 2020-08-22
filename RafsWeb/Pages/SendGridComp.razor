@@ -1,0 +1,47 @@
+﻿@page "/contact"
+@using System.Threading.Tasks;
+@using EmailSender;
+
+<div class="row">
+    <div class="col">
+        <div class="raftitle d-flex align-items-center justify-content-center vh20"><h3>Send Message</h3></div>
+    </div>
+</div>
+<div class="col-sm-9 col-md-6 mx-auto raftitle">
+    @text
+</div>
+
+<div class="col-sm-9 col-md-6 pb-5 mx-auto raftitle">
+    <EditForm class="form-group" Model="model" OnValidSubmit="async()=>await SendEmail()">
+        <DataAnnotationsValidator/>
+        <ValidationSummary/>
+        <label class="mt-3">
+            Email
+        </label>
+            <InputText class="form-control raflight" @bind-Value="model.Sender" placeholder="your email address" />           
+        <label class="mt-3">
+            Message
+        </label>
+        <InputTextArea class="form-control raflight vh20" @bind-Value="model.Body" placeholder="your message" />
+        <button class="btn raflight mt-2" type="submit">Send</button>
+    </EditForm>
+</div>
+
+
+
+@code {
+
+    MailModel model = new MailModel();
+
+    string text = string.Empty;
+
+    async Task SendEmail()
+    {
+        text = string.Empty;
+        var output = await EmailSenderClass.ExecuteEmail(model);
+        text = output;
+        model = new MailModel();
+
+    }
+
+}
