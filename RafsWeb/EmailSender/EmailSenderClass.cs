@@ -13,7 +13,7 @@ namespace RafsWeb.EmailSender
         public static async Task<string> ExecuteEmail(MailModel model)
         {
             //var apiKey = Environment.GetEnvironmentVariable("SENDGRID_API_KEY");
-            var apiKey = ("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");
+            var apiKey = ("NOTTRUE");
             var client = new SendGridClient(apiKey);
             var from = new EmailAddress("rafal_rucinski@poczta.fm");
             var subject = "From Rafs Web";
